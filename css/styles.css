@@ -1,0 +1,169 @@
+/*      background, hero-text color, footer post address: #FFFFFF
+        logo-studio color: #000000;
+        accent color: #2196F3;
+        nav-link color, section headlines: #212121;
+        MAIN COLOR nav-address color, text color: #757575;
+        hero-section and footer bgc: #2F303A; 
+        section our team bgc: #F5F4FA;
+        footer mail and tel color: rgba(255, 255, 255, 0.6);
+    ?strange line between header and hero section with color #ECECEC
+*/
+:root {
+    --primary-color: #757575;
+    --secondary-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-color);
+    background-color: #FFFFFF;
+}
+
+/*Logo*/
+.logo {
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.logo-web {
+    color: var(--accent-color);
+}
+
+/*Header*/
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;   
+    color: var(--secondary-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+.nav-contact {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+.nav-contact:hover,
+.nav-contact:focus {
+    color: var(--accent-color)
+}
+
+/*Hero section*/
+.hero-section {
+    background-color: #2F303A;  
+}
+.hero-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+/*Peculiarities section*/
+.peculiarities-section h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+.peculiarities-section p {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/*what we do section*/
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+
+/*Our team section*/
+.team-section {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+}
+.team-section h3 {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+/*Footer*/
+.footer {
+    background-color: #2F303A;
+}
+.footer-address {
+    font-style: inherit;
+}
+.footer-contact {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--accent-color);
+}
+.post-address {
+    color: #FFFFFF;
+}
+
+/*Portfolio*/
+.filter-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--secondary-color);
+}
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
