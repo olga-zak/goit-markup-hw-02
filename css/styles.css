@@ -1,23 +1,23 @@
-/*      background, hero-text color, footer post address: #FFFFFF
-        logo-studio color: #000000;
-        accent color: #2196F3;
-        nav-link color, section headlines: #212121;
-        MAIN COLOR nav-address color, text color: #757575;
-        hero-section and footer bgc: #2F303A; 
-        section our team bgc: #F5F4FA;
-        footer mail and tel color: rgba(255, 255, 255, 0.6);
+/*  logo-studio in header: #000000;
+    hero-section and footer bg: #2F303A; 
+    section our team bg: #F5F4FA;
+    footer mail and tel color: rgba(255, 255, 255, 0.6);
     ?strange line between header and hero section with color #ECECEC
 */
 :root {
-    --primary-color: #757575;
-    --secondary-color: #212121;
-    --accent-color: #2196F3;
+    --primary-color: #757575; /*MAIN COLOR nav-address, text*/
+    --secondary-color: #212121; /*nav-link, section titles*/
+    --accent-color: #2196F3; /*accent*/
+    --bg-color: #FFFFFF; /*bg, hero-title, team-item, footer post address, logo-studio in footer*/
 }
 
 body {
     font-family: Roboto, sans-serif;
     color: var(--primary-color);
-    background-color: #FFFFFF;
+    background-color: var(--bg-color);
+}
+.list {
+    list-style: none;
 }
 
 /*Logo*/
@@ -47,6 +47,9 @@ body {
 .nav-link:focus {
     color: var(--accent-color);
 }
+.nav-link.current {
+    color: var(--accent-color);
+}
 .nav-contact {
     text-decoration: none;
     font-weight: 500;
@@ -65,25 +68,30 @@ body {
     background-color: #2F303A;  
 }
 .hero-title {
-    text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--bg-color);
 }
 .hero-button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--bg-color);
     background-color: var(--accent-color);
+    cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188CE8;
 }
 
 /*Peculiarities section*/
-.peculiarities-section h3 {
+.peculiarities-section .peculiarities-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -91,7 +99,7 @@ body {
     text-transform: uppercase;
     color: var(--secondary-color);
 }
-.peculiarities-section p {
+.peculiarities-section .peculiarities-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -113,14 +121,20 @@ body {
     letter-spacing: 0.03em;
     background-color: #F5F4FA;
 }
-.team-section h3 {
+.team-section .team-title {
     font-weight: 500;
     color: var(--secondary-color);
+}
+.team-item {
+    background-color: var(--bg-color);
 }
 
 /*Footer*/
 .footer {
     background-color: #2F303A;
+}
+.logo-studio {
+    color: var(--bg-color);
 }
 .footer-address {
     font-style: inherit;
@@ -137,11 +151,12 @@ body {
     color: var(--accent-color);
 }
 .post-address {
-    color: #FFFFFF;
+    color: var(--bg-color);
 }
 
 /*Portfolio*/
 .filter-button {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -153,7 +168,7 @@ body {
 .filter-button:hover,
 .filter-button:focus {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--bg-color);
 }
 .portfolio-title {
     font-weight: 700;

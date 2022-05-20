@@ -19,9 +19,9 @@
         <a class="logo" href="./index.html"
           ><span class="logo-web">Web</span>Studio</a
         >
-        <ul class="nav-list">
+        <ul class="list nav-list">
           <li>
-            <a class="nav-link" href="./index.html">Студия</a>
+            <a class="nav-link current" href="./index.html">Студия</a>
           </li>
           <li>
             <a class="nav-link" href="./portfolio.html">Портфолио</a>
@@ -31,7 +31,7 @@
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="list">
         <li>
           <a class="nav-contact" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
@@ -52,31 +52,31 @@
       <section class="peculiarities-section">
         <h2>Особенности</h2>
         <!-- hide this h2 in css -->
-        <ul>
+        <ul class="list">
           <li>
-            <h3>Внимание к деталям</h3>
-            <p>
+            <h3 class="peculiarities-title">Внимание к деталям</h3>
+            <p class="peculiarities-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
-            <p>
+            <h3 class="peculiarities-title">Пунктуальность</h3>
+            <p class="peculiarities-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
-            <p>
+            <h3 class="peculiarities-title">Планирование</h3>
+            <p class="peculiarities-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
-            <p>
+            <h3 class="peculiarities-title">Современные технологии</h3>
+            <p class="peculiarities-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -86,7 +86,7 @@
       <!-- what we do -->
       <section>
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/img1.jpg"
@@ -116,45 +116,45 @@
       <!-- our team -->
       <section class="team-section">
         <h2 class="section-title">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="list team-list">
+          <li class="team-item">
             <img
               src="./images/person1.jpg"
               alt="мужчина в очках широко улыбается"
               width="270"
               height="260"
             />
-            <h3>Игорь Демьяненко</h3>
+            <h3 class="team-title">Игорь Демьяненко</h3>
             <p>Product Designer</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
               src="./images/person2.jpg"
               alt="женщина в очках широко улыбается"
               width="270"
               height="260"
             />
-            <h3>Ольга Репина</h3>
+            <h3 class="team-title">Ольга Репина</h3>
             <p>Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
               src="./images/person3.jpg"
               alt="мужчина широко улыбается"
               width="270"
               height="260"
             />
-            <h3>Николай Тарасов</h3>
+            <h3 class="team-title">Николай Тарасов</h3>
             <p>Marketing</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
               src="./images/person4.jpg"
               alt="мужчина в очках улыбается"
               width="270"
               height="260"
             />
-            <h3>Михаил Ермаков</h3>
+            <h3 class="team-title">Михаил Ермаков</h3>
             <p>UI Designer</p>
           </li>
         </ul>
@@ -162,10 +162,11 @@
     </main>
     <footer class="footer">
       <a class="logo" href="./index.html"
-        ><span class="logo-web">Web</span>Studio</a
-      >
+        ><span class="logo-web">Web</span
+        ><span class="logo-studio">Studio</span>
+      </a>
       <address class="footer-address">
-        <ul>
+        <ul class="list">
           <li>
             <a
               class="footer-contact post-address"
